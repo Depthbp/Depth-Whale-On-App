@@ -1,0 +1,38 @@
+{
+  "name": "depth",
+  "productName": "Depth Whale On",
+  "description": "Depth  동아리 Whale ON 앱",
+  "keywords": ["depth", "동아리", "whale on", "app", "앱", "동아리앱", "depth whale on"],
+  "main": "./main.js",
+  "version": "1.3.0",
+  "author": "김하준",
+  "license": "MIT",
+  "homepage": "https://depth.kr",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "36.4.0",
+    "electron-builder": "^23.0.0"
+  },
+  "build": {
+    "appId": "kr.depth.whaleon",
+    "productName": "Depth Whale On",
+    "icon": "icon.ico",
+    
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
+  }
+}
